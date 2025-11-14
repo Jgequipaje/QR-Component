@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledMain = styled.main`
   position: relative;
-  max-height: 100vh;
+  min-height: 100vh;
 `;
 
 const StyledCardContainer = styled.div`
@@ -12,6 +12,7 @@ const StyledCardContainer = styled.div`
   position: absolute;
   transform: translate(50%, 50%);
   right: 50%;
+  bottom: 50%;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   margin: 0 auto;
@@ -39,6 +40,10 @@ const StyledParagraph = styled.p`
   font-size: 15px;
 `;
 
+const StyledDisclaimer = styled.p`
+  font-size: 9px;
+`;
+
 function App() {
   return (
     <StyledMain>
@@ -53,6 +58,21 @@ function App() {
             skills to the next level
           </StyledParagraph>
         </StyledContent>
+        <StyledDisclaimer>
+          Challenge by{" "}
+          <a
+            href="https://www.frontendmentor.io/?ref=challenge"
+            target="_blank"
+            rel="noopener"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a href="https://www.byjeff.dev/" target="_blank" rel="noopener">
+            Jeffrey Equipaje
+          </a>
+          .
+        </StyledDisclaimer>
       </StyledCardContainer>
     </StyledMain>
   );

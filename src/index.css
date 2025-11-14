@@ -25,3 +25,15 @@ h2 {
 p {
   color: hsl(216, 15%, 48%);
 }
+
+a {
+  color: hsl(218, 44%, 22%);
+  opacity: 80%;
+  text-decoration-color: #999;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #000;
+    text-decoration-color: #000;
+  }
+}
