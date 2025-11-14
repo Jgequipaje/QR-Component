@@ -48,7 +48,7 @@ function App() {
   return (
     <StyledMain>
       <StyledCardContainer>
-        <StyledImage src="../public/image-qr-code.png" alt="Qr Code Image" />
+        <StyledImage src="/image-qr-code.png" alt="Qr Code Image" />
         <StyledContent>
           <StyledHeading>
             Improve your front-end skills by building projects
